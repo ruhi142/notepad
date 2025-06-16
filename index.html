@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+     <link rel="icon" type="image/webp" href="img/konoha.webp">
+     <link rel="shortcut icon" href="img/konoha.webp" type="image/webp">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    </head>
+    <body>
+        <section? class='app-wrapper'>
+            <div class="task-manager">
+                <h1>To-do-list</h1>
+                <div class="status-panel"> 
+                    <div class = "progress-info">
+                        <h3>Keep It Up</h3>
+                        <div id="task-progress-bar">
+                            <div id="progress-indicator"></div>
+                        </div>
+                    </div>
+                    <div class="task-count">
+                        <p id="task-stats">0/0</p>
+                    </div>
+                </div>
+            
+         <form class="task-input-form">
+            <input type="text" id="new-task-input" placeholder="Add new task">
+
+            <button type="submit" id="submit-task-btn"><i class="fa-solid fa-plus"></i></button>    
+        </form>
+
+        <div class="tasks-display">
+            <ul id="tasks-list"></ul>
+            <img class="empty-state-image" src="img/konoha.webp" alt="img">
+        </div>
+    </section>
+    </body>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+
+    </html>
